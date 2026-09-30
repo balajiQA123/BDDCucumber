@@ -17,7 +17,7 @@ export default defineConfig({
 
   use: {
     /* Run in headed mode (for learning) */
-    headless: false,
+    headless: !!process.env.CI,
 
     /* Screenshot */
     screenshot: 'on',
